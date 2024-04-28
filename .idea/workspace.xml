@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c71a9f23-71ff-4e9d-aab0-feb953f42fa5" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/METR-LA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/PEMS-BAY.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/PEMS03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/PEMS04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/PEMS07.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/PEMS07_104.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/PEMS07_6464.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/PEMS08.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/arch/Nnembedding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/arch/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/arch/adjmx_crsAttn_parallel_fusion_PEMS04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/arch/mlp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/arch/newP.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/arch/newP1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/arch/normlap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/normlapPEMS03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/normlapPEMS04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/normlapPEMS07.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/normlapPEMS08.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baselines/STAEformer/run.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2coX2jUfB1wDUgO4b8HNCKGaUkx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c71a9f23-71ff-4e9d-aab0-feb953f42fa5" name="默认的" comment="" />
+      <created>1708778699555</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708778699555</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="997" y="449" key="FileChooserDialogImpl" timestamp="1708778735869">
+      <screen x="0" y="0" width="2560" height="1392" />
+    </state>
+    <state x="997" y="449" key="FileChooserDialogImpl/0.0.2560.1392@0.0.2560.1392" timestamp="1708778735869" />
+  </component>
+</project>
