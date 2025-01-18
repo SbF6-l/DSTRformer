@@ -1,3 +1,12 @@
+##citing
+
+###BibTeX
+
+```bibtex
+comming soon
+```
+
+
 <div align="center">
   <img src="assets/basicts_logo.png" height=200>
   <!-- <h1><b> BasicTS </b></h1> -->
