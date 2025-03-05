@@ -1,11 +1,15 @@
-## citing
+## Citing
 
-### BibTeX
 
-```bibtex
+```
 comming soon
 ```
 
+## Paper
+
+```
+https://arxiv.org/abs/2501.10796
+```
 
 <div align="center">
   <img src="assets/basicts_logo.png" height=200>
