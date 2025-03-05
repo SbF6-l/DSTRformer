@@ -11,6 +11,11 @@ comming soon
 https://arxiv.org/abs/2501.10796
 ```
 
+## How to run after installation?
+
+```
+./run.sh
+```
 <div align="center">
   <img src="assets/basicts_logo.png" height=200>
   <!-- <h1><b> BasicTS </b></h1> -->
