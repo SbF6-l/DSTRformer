@@ -2,13 +2,21 @@
 
 
 ```
-comming soon
+@article{CHEN2025112979,
+title = {Dynamic trend fusion module for traffic flow prediction},
+journal = {Applied Soft Computing},
+pages = {112979},
+year = {2025},
+issn = {1568-4946},
+doi = {https://doi.org/10.1016/j.asoc.2025.112979},
+url = {https://www.sciencedirect.com/science/article/pii/S156849462500290X}
 ```
 
 ## Paper
 
 ```
-https://arxiv.org/abs/2501.10796
+Arxiv: https://arxiv.org/abs/2501.10796
+Applied soft computing: https://www.sciencedirect.com/science/article/pii/S156849462500290X
 ```
 
 ## How to run after installation?
