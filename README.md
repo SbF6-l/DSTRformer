@@ -1,3 +1,10 @@
+## How to run after installation?
+
+```
+./run.sh
+```
+
+
 ## Citing
 
 
@@ -19,11 +26,7 @@ Arxiv: https://arxiv.org/abs/2501.10796
 Applied soft computing: https://www.sciencedirect.com/science/article/pii/S156849462500290X
 ```
 
-## How to run after installation?
 
-```
-./run.sh
-```
 <div align="center">
   <img src="assets/basicts_logo.png" height=200>
   <!-- <h1><b> BasicTS </b></h1> -->
