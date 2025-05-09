@@ -1,7 +1,5 @@
 ## Download processed Data
-```
 [Google Drive](https://drive.google.com/file/d/1_8GD3bnN5n1A0zn6e9oGlymna-pqppl9/view), and unzip them to `datasets/`.
-```
 
 ## How to run after installation?
 
