@@ -8,7 +8,7 @@ from .registry import SCALER_REGISTRY
 
 @SCALER_REGISTRY.register()
 def standard_transform(data: np.array, output_dir: str, train_index: list, history_seq_len: int, future_seq_len: int, norm_each_channel: int = False) -> np.array:
-    """Standard normalization.
+    """Standard normalization with safety against divide-by-zero.
 
     Args:
         data (np.array): raw time series data.
@@ -26,8 +26,11 @@ def standard_transform(data: np.array, output_dir: str, train_index: list, histo
     data_train = data[:train_index[-1][1], ...]
     if norm_each_channel:
         mean, std = data_train.mean(axis=0, keepdims=True), data_train.std(axis=0, keepdims=True)
+        std[std == 0] = 1e-8
     else:
         mean, std = data_train[..., 0].mean(), data_train[..., 0].std()
+        if std == 0:
+            std = 1e-8                                    # 防止除0
 
     print("mean (training data):", mean)
     print("std (training data):", std)

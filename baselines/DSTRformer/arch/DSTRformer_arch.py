@@ -288,25 +288,29 @@ class DSTRformer(nn.Module):
             features.append(time_series_emb)
 
         if self.tod_embedding_dim > 0:
-            tod_emb = self.tod_embedding(
-                (tod * self.steps_per_day).long()
-            )  # (batch_size, in_steps, num_nodes, tod_embedding_dim)
+            tod_index = (tod * self.steps_per_day).clamp(0, self.steps_per_day - 1).long()
+            tod_emb = self.tod_embedding(tod_index)
             features.append(tod_emb)
+
         if self.dow_embedding_dim > 0:
-            dow_emb = self.dow_embedding(
-                dow.long()
-            )  # (batch_size, in_steps, num_nodes, dow_embedding_dim)
+            dow_index = dow.clamp(0, 6).long()
+            dow_emb = self.dow_embedding(dow_index)
             features.append(dow_emb)
+
         if self.time_embedding_dim > 0:
-            time_emb = self.time_embedding(
-                ((tod + dow * 7) * self.steps_per_day).long()
-            )
+            tod_index = (tod * self.steps_per_day).clamp(0, self.steps_per_day - 1).long()
+            dow_index = dow.clamp(0, 6).long()
+            time_index = (dow_index * self.steps_per_day + tod_index).clamp(0, 7 * self.steps_per_day - 1)
+            time_emb = self.time_embedding(time_index)
             features.append(time_emb)
         if self.adaptive_embedding_dim > 0:
             adp_emb = self.adaptive_embedding.expand(
                 size=(batch_size, *self.adaptive_embedding.shape)
             )
             features.append(adp_emb)
+
+        for i, f in enumerate(features):
+            print(f"[DEBUG] feature[{i}] shape: {f.shape}")
 
         temporal_x = torch.cat(features, dim=-1)  # (batch_size, in_steps, num_nodes, model_dim)
         spatial_x = temporal_x.clone()
